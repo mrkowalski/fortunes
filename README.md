@@ -12,5 +12,5 @@ The implementation is quite defensive and in case anything goes wrong, the defau
  
 # How to use it in your project?
  
-Just copy-paste the only implementation file to your codebase, changing the package on your way. Main method can obviously be deleted, if not needed. Any fortunes file can be used. The one included in this project under ./data is the exact copy of https://github.com/bmc/fortunes/blob/master/fortunes
+Just copy-paste the only implementation file to your codebase, changing the package on your way. The "main" method can obviously be deleted, if not needed. Any fortunes file can be used. The one included in this project under ./data is the exact copy of https://github.com/bmc/fortunes/blob/master/fortunes
  
