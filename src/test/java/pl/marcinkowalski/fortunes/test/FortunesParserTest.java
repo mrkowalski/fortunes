@@ -9,7 +9,7 @@ import java.net.URISyntaxException;
 
 import static org.junit.Assert.assertEquals;
 
-public class FortunesTest {
+public class FortunesParserTest {
 
     private String quote(final String systemResourceName) throws URISyntaxException, IOException {
         return new Fortunes(new File(ClassLoader.getSystemResource(systemResourceName).toURI())).getQuote();
