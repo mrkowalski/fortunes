@@ -1,5 +1,5 @@
 # Fortunes
-Java 8 implementation of classic Unix fortunes
+Java 8 implementation of classic Unix fortunes.
 
 # Why?
 
