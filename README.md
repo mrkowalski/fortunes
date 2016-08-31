@@ -4,7 +4,7 @@ Java 8 implementation of classic Unix fortunes.
 # Why?
 
 I wrote it, because I needed something that required at least JDK8 in order to force migration of some corporate code to the latest JDK.
-Parsing fortune files does not require any JDK 8 features, but as soon as it is added to the codebase, no earlier version of Java can be used to compile it, and that's the whole point. No one will be able to roll your JDK version back.
+Parsing fortune files does not require any JDK8 features, but as soon as it is added to the codebase, no earlier version of Java can be used to compile it, and that's the whole point. No one will be able to roll your JDK version back.
 
 # Sleep safe and sound
 
