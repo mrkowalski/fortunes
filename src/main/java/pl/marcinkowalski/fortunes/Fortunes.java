@@ -45,12 +45,12 @@ public class Fortunes {
     private String getQuote(final MappedByteBuffer map, final int randomPosition, final int len) {
 
         int start = randomPosition;
-        while (start > 0 && ((char) map.get(start)) != '%') start--;
-        if (start > 0 || map.get(start) == '%') start++;
-        int end = start + 1;
-        while (end < len && ((char) map.get(end)) != '%') end++;
-        if (end > len) end = len;
-        if (map.get(end) == '%') end--;
+        while (start > 0 && !((map.get(start - 1)) == '%' && (map.get(start) == '\n'))) start--;
+        if (map.get(start) == '%' && (start == len - 1 || map.get(start + 1) == '\n')) start++;
+        int end = start;
+        if (end < len) end++;
+        while (end < len - 1 && !((map.get(end) == '%') && map.get(end + 1) == '\n')) end++;
+        if (end < len && map.get(end - 1) != '\n') end++;
         byte[] data = new byte[end - start];
         map.position(start);
         map.get(data);

@@ -42,6 +42,16 @@ public class FortunesTest {
 
     @Test
     public void test06() throws URISyntaxException, IOException {
-        assertEquals("", quote("tc06"));
+        assertEquals("%%%", quote("tc06"));
+    }
+
+    @Test
+    public void test07() throws URISyntaxException, IOException {
+        assertEquals("%kowalski%", quote("tc07"));
+    }
+
+    @Test
+    public void test08() throws URISyntaxException, IOException {
+        assertEquals("%kowalski%", quote("tc08"));
     }
 }
