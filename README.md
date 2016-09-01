@@ -14,6 +14,6 @@ The implementation is quite defensive and in case anything goes wrong, the defau
  
 Just copy-paste the only implementation file to your codebase, changing the package on your way. The "main" method can obviously be deleted, if not needed. Any fortunes file can be used. The one included in this project under ./data is the exact copy of https://github.com/bmc/fortunes/blob/master/fortunes
  
- # Few implementation details
+# Few implementation details
  
- Fortune selection is pseudo-random and the likehood of picking up a given fortune is directly proportional to its length. Memory mapped files are used for performance. Maximum fortune file size is Integer.MAX_VALUE. This implementation is to an extent based on http://software.clapper.org/fortune/.
+Fortune selection is pseudo-random and the likehood of picking up a given fortune is directly proportional to its length. Memory mapped files are used for performance. Maximum fortune file size is Integer.MAX_VALUE. This implementation is to an extent based on http://software.clapper.org/fortune/.
